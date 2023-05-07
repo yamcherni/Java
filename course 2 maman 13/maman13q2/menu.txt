@@ -1,0 +1,9 @@
+Oister
+Main
+50
+Kineder
+Desert
+10
+Coke
+Drink
+5

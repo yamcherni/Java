@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="532.0" prefWidth="661.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SudokuController">
+   <children>
+      <GridPane fx:id="gridid" alignment="CENTER" prefHeight="484.0" prefWidth="663.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+      </GridPane>
+      <ButtonBar prefHeight="58.0" prefWidth="600.0">
+        <buttons>
+            <Separator prefWidth="200.0" />
+            <Button mnemonicParsing="false" onAction="#setPressed" text="set">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Button>
+          <Button mnemonicParsing="false" onAction="#clearPressed" text="clear">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Button>
+            <Separator prefWidth="200.0" />
+        </buttons>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </ButtonBar>
+   </children>
+</VBox>
