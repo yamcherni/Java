@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox fx:id="vboxid" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.q2mmn14.RemController">
+   <children>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="6.0">
+         <children>
+            <ComboBox fx:id="dayid" prefWidth="150.0" promptText="31">
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </ComboBox>
+            <ComboBox fx:id="monthid" prefWidth="150.0" promptText="12">
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </ComboBox>
+            <ComboBox fx:id="yearid" prefWidth="150.0" promptText="2024">
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </ComboBox>
+         </children>
+      </HBox>
+      <TextArea fx:id="textArea" prefHeight="200.0" prefWidth="200.0" />
+      <Button mnemonicParsing="false" onAction="#saveNotePressed" prefHeight="25.0" prefWidth="135.0" text="Save date" />
+      <Separator prefHeight="8.0" prefWidth="293.0" />
+      <Button mnemonicParsing="false" onAction="#getNotePressed" prefHeight="25.0" prefWidth="135.0" text="Get date" />
+   </children>
+</VBox>
